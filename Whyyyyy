@@ -16,19 +16,19 @@ local shadow = game:GetObjects("rbxassetid://11503625408")[1]
 				l__ImageLabel__1.Image = "rbxassetid://105657469801965";
 			end;
 			if v4 == 2 then
-				l__ImageLabel__1.Image = "rbxassetid://109188770255707";
+				l__ImageLabel__1.Image = "rbxassetid://105657469801965";
 			end;
 			if v4 == 3 then
 				l__ImageLabel__1.Image = "rbxassetid://105657469801965";
 			end;
 			if v4 == 4 then
-				l__ImageLabel__1.Image = "rbxassetid://109188770255707";
+				l__ImageLabel__1.Image = "rbxassetid://105657469801965";
 			end;
 			if v4 == 5 then
-				l__ImageLabel__1.Image = "rbxassetid://91718913496218";
+				l__ImageLabel__1.Image = "rbxassetid://105657469801965";
 			end;
 			if v4 == 6 then
-				l__ImageLabel__1.Image = "rbxassetid://91718913496218";
+				l__ImageLabel__1.Image = "rbxassetid://105657469801965";
 			end;
 			shadow.Jumpscare:Play();
 			for v5 = 1, 25 do
