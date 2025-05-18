@@ -23,11 +23,33 @@ corner1.Parent = bar
 
 local num = Instance.new("NumberValue",frame)
 num.Value = 0
+
+local scriptURLs = {
+    "https://raw.githubusercontent.com/Voorproo/Silence/refs/heads/main/Nightmare",
+    "https://raw.githubusercontent.com/Voorproo/Silence/refs/heads/main/Bobobos",
+"https://raw.githubusercontent.com/Voorproo/Bloopies/refs/heads/main/Hhahaha",
+"https://raw.githubusercontent.com/Voorproo/Eye/refs/heads/main/Geed",
+"https://raw.githubusercontent.com/Voorproo/Wh1t3-spawn/refs/heads/main/White%20orginal",
+"https://github.com/PABMAXICHAC/doors-monsters-scripts/raw/main/blinkcrux",
+"https://raw.githubusercontent.com/Voorproo/Smiler/refs/heads/main/Smiler%202"
+}
+
 num.Changed:Connect(function()
     local anim = tweenservice:Create(bar,TweenInfo.new(5,Enum.EasingStyle.Linear),{Size = UDim2.new(0,num.Value,0,10)})
     anim:Play()
-if num.Value == 300 then
-num.Value = 0
+if num.Value >= 300 then
+num.Value = 0 
+local index = math.random(1, #scriptURLs)
+        local url = scriptURLs[index]
+        local success, result = pcall(function()
+            return game:HttpGet(url)
+        end)
+        if success then
+            local func, err = loadstring(result)
+            if func then
+                func()
+end
+end
 end
 end)
 
