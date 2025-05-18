@@ -3,29 +3,32 @@ local tweenservice = game:GetService("TweenService")
 local gui = Instance.new("ScreenGui",game.Players.LocalPlayer.PlayerGui)
 local frame = Instance.new("Frame",gui)
 frame.BorderSizePixel = 0
-frame.BackgroundTransparency = 1 -- Nền trong suốt để chỉ thấy viền
+frame.BackgroundTransparency = 1
 frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)  
 frame.Position = UDim2.new(0.637, 0,0.88, 0)
 frame.Size = UDim2.new(0, 310,0, 25)
 local corner = Instance.new("UICorner",frame)
 corner.CornerRadius = UDim.new(0.25,0)
 local stroke = Instance.new("UIStroke",frame)
-stroke.Color = Color3.fromRGB(255, 224, 189) -- Màu da người nhạt -- Viền trắng
+stroke.Color = Color3.fromRGB(255, 224, 189) 
 stroke.Thickness = 4
 
 local bar = Instance.new("Frame",frame)
 bar.Position = UDim2.new(0.016, 0,0.19, 0)
 bar.Size = UDim2.new(0, 50,0, 15)
-bar.BackgroundColor3 = Color3.fromRGB(139,0,0) -- Đỏ đậm
+bar.BackgroundColor3 = Color3.fromRGB(139,0,0) 
 bar.BorderSizePixel = 0
 local corner1 = corner:Clone()
 corner1.Parent = bar
 
 local num = Instance.new("NumberValue",frame)
-num.Value = 50
+num.Value = 0
 num.Changed:Connect(function()
     local anim = tweenservice:Create(bar,TweenInfo.new(5,Enum.EasingStyle.Linear),{Size = UDim2.new(0,num.Value,0,10)})
     anim:Play()
+if num.Value == 300 then
+num.Value = 0
+end
 end)
 
 _G.stats = num
