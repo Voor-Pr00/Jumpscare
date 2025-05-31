@@ -26,10 +26,7 @@ num.Value = 0
 
 local scriptURLs = {
     "https://raw.githubusercontent.com/Voorproo/Silence/refs/heads/main/Nightmares",
-"https://raw.githubusercontent.com/Voorproo/Bloopies/refs/heads/main/Hhahaha",
-"https://raw.githubusercontent.com/Voorproo/Eye/refs/heads/main/Geed",
-"https://raw.githubusercontent.com/Voorproo/spawnnn/refs/heads/main/White%20orginal",
-"https://raw.githubusercontent.com/Voorproo/Smiler/refs/heads/main/Smiler%202"
+"https://raw.githubusercontent.com/Voorproo/Bloopies/refs/heads/main/Hhahaha"
 }
 
 num.Changed:Connect(function()
