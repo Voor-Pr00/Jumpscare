@@ -4,7 +4,8 @@ local shadow = game:GetObjects("rbxassetid://11503625408")[1]
     	sound.SoundId = "rbxassetid://"..5263560566
     	sound.Looped = false
     	sound.Parent = gui
-    	sound.Volume = 5
+    	sound.Volume = 8
+        sound.PlaybackSpeed = 1
     	sound:Play()
 			shadow.Parent = gui
 			shadow.Visible = true
