@@ -46,9 +46,10 @@ local shadow = game:GetObjects("rbxassetid://11503625408")[1]
 				l__ImageLabel__1.Position = UDim2.new(v2:NextNumber(0.4, 0.6), 0, v2:NextNumber(0.45, 0.55), 0);
 				l__ImageLabel__1.Size = l__ImageLabel__1.Size + UDim2.new(l__SizeValue__3.Value, 0, l__SizeValue__3.Value, 0);
 				l__ImageLabel__1.Rotation = math.random(-10, 10);
-				l__SizeValue__3.Value = l__SizeValue__3.Value - 0.01;
+				l__SizeValue__3.Value = l__SizeValue__3.Value - 0.001;
 				wait(0);
-			end;
+			end
+                  sound:Stop()
 			l__ImageLabel__1.ImageColor3 = Color3.new(1, 0, 0);
 			shadow.BackgroundColor3 = Color3.new(0, 0, 0);
 			shadow.Visible = false;
