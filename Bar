@@ -25,8 +25,8 @@ local num = Instance.new("NumberValue",frame)
 num.Value = 0
 
 local scriptURLs = {
-    "https://raw.githubusercontent.com/Voorproo/Silence/refs/heads/main/Nightmares",
-"https://raw.githubusercontent.com/Voorproo/Bloopies/refs/heads/main/Hhahaha"
+    "https://raw.githubusercontent.com/Voor-Pr00/Silence/refs/heads/main/Nightmares",
+"https://raw.githubusercontent.com/Voor-Pr00/Bloopies/refs/heads/main/Hhahaha"
 }
 
 num.Changed:Connect(function()
